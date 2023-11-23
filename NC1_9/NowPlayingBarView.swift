@@ -18,11 +18,29 @@ struct NowPlayingBar<Podcast: ViewModel>: View {
             Rectangle().foregroundColor(Color.white.opacity(0.0)).frame(width: UIScreen.main.bounds.size.width, height: 65).background(Blur())
             HStack {
                 Button(action: {}) {
+                    
+                    
                     HStack {
-                        Image("Geopop").resizable().frame(width: 45, height: 45).shadow(radius: 6, x: 0, y: 3).padding(.leading)
-                        Text("Shake It Off").padding(.leading, 10)
-                        Spacer()
+                        Image("Don").resizable().frame(width: 45, height: 45).shadow(radius: 6, x: 0, y: 3).padding(.leading)
+                        
+                        VStack{
+                            
+                            Text("Lo scarrellamento dei prezzi").padding(.leading, 10)
+                            Spacer()
+                            
+                            Text("10/10/10")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                                .padding(.top, 0.0)
+                        }
+                        
                     }
+                    
+                    
+                    
+                    
+                    
+                    
                 }.buttonStyle(PlainButtonStyle())
                 Button(action: {}) {
                     Image(systemName: "play.fill").font(.title3)

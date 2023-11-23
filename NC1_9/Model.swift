@@ -16,6 +16,6 @@ struct Podcast: Identifiable {
     var coverName: String
     var recurrence: String
     var category: String 
-    var date: String = "23/07/2019"
+    var date: String
 }
 

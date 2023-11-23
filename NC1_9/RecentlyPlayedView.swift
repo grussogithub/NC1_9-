@@ -23,6 +23,7 @@ struct RecentlyPlayedView: View {
                     .font(.caption)
                     .foregroundColor(.gray)
                     .padding(.top, 0.0)
+                
                 Text(podcast.title)
                     .bold()
                     .lineLimit(1)

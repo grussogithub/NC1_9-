@@ -9,22 +9,18 @@ import SwiftUI
 
 struct ListenNowView: View {
     var body: some View {
-   
-        
-        
-        
         
         ZStack {
-         
+            
             NavigationStack {
-                    ScrollView {
-                        CardViewScroll(podcasts: ViewModel().podcasts)
-                        CoversScrollView(podcasts: ViewModel().coverPodcasts)
-                        RecentlyPlayedScrollView(podcasts: ViewModel().recentlyPlayedPodcasts)
-                            .padding([.bottom],100)
-                     
-                    }
-                    .navigationTitle("Listen Now")
+                ScrollView {
+                    CardViewScroll(podcasts: ViewModel().podcasts)
+                    CoversScrollView(podcasts: ViewModel().coverPodcasts)
+                    RecentlyPlayedScrollView(podcasts: ViewModel().recentlyPlayedPodcasts)
+                        .padding([.bottom],100)
+                    
+                }
+                .navigationTitle("Listen Now")
             }
             
             ZStack {
@@ -32,9 +28,31 @@ struct ListenNowView: View {
                 HStack {
                     Button(action: {}) {
                         HStack {
-                            Image("Geopop").resizable().frame(width: 45, height: 45).shadow(radius: 6, x: 0, y: 3).padding(.leading)
-                            Text("Shake It Off").padding(.leading, 10)
-                            Spacer()
+                            
+                            Image("Don")
+                                .resizable()
+                                .frame(width: 45, height: 45)
+                                .shadow(radius: 6, x: 0, y: 3)
+                                .padding(.leading)
+                            
+                            VStack(alignment: .leading){
+                                Text("Lo scarrellamento dei prezzi")
+                                    .font(.body)
+                                    .fontWeight(.semibold)
+                                    .lineLimit(1)
+                                    .padding(0.0)
+//                                Spacer()
+                                
+                                Text("23/11/23")
+                                    .font(.body)
+                                    .foregroundColor(.gray)
+                                    .padding([.leading, .bottom], 0)
+//                                    .multilineTextAlignment(.leading)
+                                    
+
+                                
+                            }
+                            
                         }
                     }.buttonStyle(PlainButtonStyle())
                     Button(action: {}) {
@@ -43,7 +61,7 @@ struct ListenNowView: View {
                     Button(action: {}) {
                         Image(systemName: "goforward.30").font(.title3)
                     }.buttonStyle(PlainButtonStyle()).padding(.trailing, 30)
-        
+                    
                 }
             }
             .offset(y: 325)

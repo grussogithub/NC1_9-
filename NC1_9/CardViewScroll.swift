@@ -25,10 +25,7 @@ struct CardViewScroll: View {
                 Image(systemName: "chevron.right")
             }
             .font(.title2)
-            
-            
-            
-            
+                        
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(podcasts) { podcast in
@@ -40,7 +37,7 @@ struct CardViewScroll: View {
             .scrollIndicators(.hidden)
         }
         .padding(.top)
-
+        
     }
 }
 
