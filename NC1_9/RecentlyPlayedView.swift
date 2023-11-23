@@ -19,10 +19,22 @@ struct RecentlyPlayedView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 7))
 
             VStack(alignment: .leading){
+                Text(podcast.date)
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .padding(.top, 0.0)
                 Text(podcast.title)
-                Text(podcast.recurrence)
-                Text("\(podcast.duration)")
-                Text(String(podcast.isFollowed))
+                    .bold()
+                    .lineLimit(1)
+
+                Text(podcast.description)
+                    .lineLimit(1)
+                
+                Image(systemName: "play.circle.fill")
+                    .foregroundColor(.purple)
+                    .padding(.vertical, -3.0)
+                    .font(.system(size: 25))
+
             }
 
         }

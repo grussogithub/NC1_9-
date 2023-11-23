@@ -86,6 +86,7 @@
 				9E95435E2B0CF3BA008551FD /* BrowseView.swift */,
 				9E9543602B0CF3D2008551FD /* LibraryView.swift */,
 				9E9543622B0CF3E3008551FD /* SearchView.swift */,
+				9E95436E2B0D0EAA008551FD /* NowPlayingBarView.swift */,
 				9EE08D5F2B0A5631000FD9E3 /* Screen1 */,
 				9EE08D5E2B0A5622000FD9E3 /* Model */,
 				9EE08D4A2B0A3D77000FD9E3 /* Assets.xcassets */,
@@ -114,12 +115,11 @@
 		9EE08D5F2B0A5631000FD9E3 /* Screen1 */ = {
 			isa = PBXGroup;
 			children = (
-				9E95436E2B0D0EAA008551FD /* NowPlayingBarView.swift */,
 				9EC391142B0BC10D008B6A4D /* CardView.swift */,
-				9EE08D582B0A4196000FD9E3 /* CoverView.swift */,
-				9EC391102B0B9ABC008B6A4D /* RecentlyPlayedView.swift */,
 				9EC391162B0BC638008B6A4D /* CardViewScroll.swift */,
+				9EE08D582B0A4196000FD9E3 /* CoverView.swift */,
 				9EE08D5A2B0A4FE6000FD9E3 /* CoversScrollView.swift */,
+				9EC391102B0B9ABC008B6A4D /* RecentlyPlayedView.swift */,
 				9EC391122B0B9AC4008B6A4D /* RecentlyPlayedScrollView.swift */,
 			);
 			name = Screen1;

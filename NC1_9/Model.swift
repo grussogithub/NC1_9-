@@ -15,5 +15,7 @@ struct Podcast: Identifiable {
     var isFollowed: Bool
     var coverName: String
     var recurrence: String
+    var category: String 
+    var date: String = "23/07/2019"
 }
 

@@ -17,8 +17,8 @@ struct CoverView: View {
                 .resizable()
                 .frame(width: 160, height: 160)
                 .clipShape(RoundedRectangle(cornerRadius: 7))
-            Text(podcast.title)
-            Text(podcast.description)
+            Text(podcast.category)
+            Text(podcast.recurrence)
                 .foregroundColor(Color.gray)
                 
 
